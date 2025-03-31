@@ -1,0 +1,6 @@
+@use "colors" as *;
+
+:root {
+  --color-background: #{$c-white};
+  --color-text: #{$c-black-light};
+}

@@ -1,0 +1,29 @@
+@use "colors" as *;
+
+.btn-fav{
+  $size: 2rem;
+  border-radius: 50%;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  width: $size;
+  height: $size;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+
+  transition: border-color 0.5s;
+  &:hover{
+    border-color: var(--color-btn-border-hover);
+  }
+}
+
+button{
+  --color-btn-background: #{$c-white};
+  --color-btn-text: #{$c-black-light};
+  --color-btn-border: silver;
+  --color-btn-border-hover: #{$c-black};
+  cursor: pointer;
+  appearance: none;
+}
